@@ -1,5 +1,5 @@
-# Planner-Gantt (beta)
-Simple app that displays plans from Office 365 with a Gantt Chart using DlhSoft.GanttChartWebLibrary. 
+# Planner Gantt (beta)
+Simple Web app that displays plans from Office 365 using a Gantt Chart component from [DlhSoft Gantt Chart Web Library](http://DlhSoft.com/GanttChartWebLibrary). 
 
 ## Overview
 The application uses GanttChartView component from DlhSoft Gantt Chart Web Library to display plans and tasks from Microsoft Office 365 Planner.
