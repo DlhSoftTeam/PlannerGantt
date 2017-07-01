@@ -1,0 +1,970 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DlhSoft.ProjectData.PertChart.Mvc.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:DlhSoft.Web.Mvc.Pert.HtmlExtensions">
+            <summary>
+            HTML helper methods for rendering PERT Chart and related controls from DlhSoft.GanttChartHyperLibrary package.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.HtmlExtensions.PertChartView(System.Web.Mvc.HtmlHelper,System.Action{DlhSoft.Web.Mvc.Pert.PertChartView})">
+            <summary>
+            Renders a PertChartView control instance.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.HtmlExtensions.NetworkDiagramView(System.Web.Mvc.HtmlHelper,System.Action{DlhSoft.Web.Mvc.Pert.NetworkDiagramView})">
+            <summary>
+            Renders a NetworkDiagramView control instance.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView">
+            <summary>
+            Displays task data in a customizable Network Diagram control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.#ctor">
+            <summary>
+            Initializes a new <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView"/> instance.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ClientID">
+            <summary>
+            Gets or sets an identifier to be applied as id attribute of the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.Width">
+            <summary>
+            Gets or sets the width to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.Height">
+            <summary>
+            Gets or sets the height to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.BorderStyle">
+            <summary>
+            Gets or sets the border style to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.BorderWidth">
+            <summary>
+            Gets or sets the border width to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.BorderColor">
+            <summary>
+            Gets or sets the border color to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.BackColor">
+            <summary>
+            Gets or sets the background color to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ForeColor">
+            <summary>
+            Gets or sets the foreground color to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.InitializingContent">
+            <summary>
+            Gets or sets the inner HTML to be used while initializing (such as a "Please wait..." message).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.InitializingClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control parameter), to be executed before client side component initialization.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.InitializedClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control parameter), to be executed after client side component initialization.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.Target">
+            <summary>
+            Gets or sets a presentation target to be used to initialize the default values of some of the appearance properties of the control; it is set to Standard by default.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.Theme">
+            <summary>
+            Gets or sets a presentation theme to be used to initialize the default values of some of the appearance properties of the control; it is set to Modern by default.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ContainerCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the main content container within the control.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.CanUserRearrangeItems">
+            <summary>
+            Gets or sets a value that indicates whether the user can change the canvas positions of task items in the control by drag and drop operations.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.SnapRearrangedItemsToGuidelines">
+            <summary>
+            Gets or sets a value that indicates whether the task item shapes are snapping to row and column based guidelines in the control during drag and drop based rearrange operations.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ItemWidth">
+            <summary>
+            Gets or sets the column width of any item presented in the diagram; by default it is set to 220.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ItemHeight">
+            <summary>
+            Gets or sets the row height of any item presented in the diagram; by default it is set to 100.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.AspectRatio">
+            <summary>
+            Gets or sets the aspect ratio of the diagram, indicating the rate between horizontal and vertical item layout positioning.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ShapeWidth">
+            <summary>
+            Gets or sets the column width of any shape presented in the diagram; by default it is set to 212.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ShapeHeight">
+            <summary>
+            Gets or sets the row height of any shape presented in the diagram; by default it is set to 92.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.MinDependencyLineLength">
+            <summary>
+            Gets or sets the minimum length of the dependency lines displayed in the diagram at initialization time; by default it is set to 48.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.DiagramMargin">
+            <summary>
+            Gets or sets the margin to preserve around the diagram; by default it is set to 16.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ShapeCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ShapeFill">
+            <summary>
+            Gets or sets the color to be used to fill the shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ShapeStroke">
+            <summary>
+            Gets or sets the color to be used to draw the borders of the shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.MilestoneCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the milestone shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.MilestoneStroke">
+            <summary>
+            Gets or sets the color to be used to draw the supplemental borders of milestone shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.DependencyLineCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to apply to polylines displayed between dependent task shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.DependencyLineStroke">
+            <summary>
+            Gets or sets the color to be used to draw the polylines displayed between dependent task shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.IsTaskToolTipVisible">
+            <summary>
+            Gets or sets a value that determines whether task shape tool tips are presented.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.IsDependencyToolTipVisible">
+            <summary>
+            Gets or sets a value that determines whether dependency line tool tips are presented.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.TaskTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, and item parameters), returning SVG content to be presented for all the items in the diagram (usually a task shape).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ExtraTaskTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, and item parameters), returning extra SVG content to be presented for items in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ItemTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, and item parameters), returning SVG content to be presented for a specific item in the diagram (usually a tool tip).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.DependencyLineTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, item, and predecessor item parameters), returning SVG content to be presented as dependency line for an item and a specified predecessor item in the diagram, between a task and its predecessor (usually a polyline computed based on the task and predecessor shape positions in the diagram).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.PredecessorItemTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, item, and predecessor item parameters), returning SVG content to be presented for an item and a specific predecessor item in the diagram (usually a tool tip).
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetValue``1(System.String,``0)">
+            <summary>
+            Gets a setting value.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.SetValue``1(System.String,``0)">
+            <summary>
+            Sets a setting value.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.OnPreRender">
+            <summary>
+            Called before rendering (i.e. ToString call).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.Items">
+            <summary>
+            Gets or sets the task items to be presented in the Network Diagram.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.ToString">
+            <summary>
+            Renders the contents of the control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.IsCritical(DlhSoft.Web.Mvc.Pert.NetworkDiagramItem)">
+            <summary>
+            Gets a value indicating whether the specified item is critical within the project consisting of all task dependencies within the control.
+            </summary>
+            <param name="item">The item to check.</param>
+            <returns>A value indicating whether the specified item is critical within the project consisting of all task dependencies within the control.</returns>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.IsCritical(DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem)">
+            <summary>
+            Gets a value indicating whether the specified predecessor item is critical within the project consisting of all task dependencies within the control.
+            </summary>
+            <param name="item">The predecessor item to check.</param>
+            <returns>A value indicating whether the specified predecessor item is critical within the project consisting of all task dependencies within the control.</returns>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetCriticalItems">
+            <summary>
+            Iterates the critical items of the project consisting of all task dependencies within the control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetCriticalDependencies">
+            <summary>
+            Iterates the critical predecessor items of the project consisting of all task dependencies within the control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetStart">
+            <summary>
+            Retreives the start item of the diagram.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetFinish">
+            <summary>
+            Retreives the finish item of the diagram.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetPredecessors(DlhSoft.Web.Mvc.Pert.NetworkDiagramItem)">
+            <summary>
+            Iterates predecessor items of the specified item satisfying the specified dependency type condition in the Network Diagram related collection as NetworkDiagramItem objects.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetSuccessors(DlhSoft.Web.Mvc.Pert.NetworkDiagramItem)">
+            <summary>
+            Iterates successor items of the specified item in the Network Diagram related collection (i.e. those that have the specified item defined as a predecessor of any dependency type).
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramView.GetSuccessorPredecessorItems(DlhSoft.Web.Mvc.Pert.NetworkDiagramItem)">
+            <summary>
+            Iterates successor items of the specified item in the Network Diagram related collection (i.e. those that have the specified item defined as a predecessor of any dependency type) as PredecessorItem objects.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.PertChartView">
+            <summary>
+            Displays task event data in a customizable PERT Chart control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.#ctor">
+            <summary>
+            Initializes a new <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView"/> instance.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ClientID">
+            <summary>
+            Gets or sets an identifier to be applied as id attribute of the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.Width">
+            <summary>
+            Gets or sets the width to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.Height">
+            <summary>
+            Gets or sets the height to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.BorderStyle">
+            <summary>
+            Gets or sets the border style to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.BorderWidth">
+            <summary>
+            Gets or sets the border width to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.BorderColor">
+            <summary>
+            Gets or sets the border color to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.BackColor">
+            <summary>
+            Gets or sets the background color to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ForeColor">
+            <summary>
+            Gets or sets the foreground color to be applied for the client side component container (div element).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.InitializingContent">
+            <summary>
+            Gets or sets the inner HTML to be used while initializing (such as a "Please wait..." message).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.InitializingClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control parameter), to be executed before client side component initialization.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.InitializedClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control parameter), to be executed after client side component initialization.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.Target">
+            <summary>
+            Gets or sets a presentation target to be used to initialize the default values of some of the appearance properties of the control; it is set to Standard by default.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.Theme">
+            <summary>
+            Gets or sets a presentation theme to be used to initialize the default values of some of the appearance properties of the control; it is set to Modern by default.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ContainerCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the main content container within the control.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.CanUserRearrangeItems">
+            <summary>
+            Gets or sets a value that indicates whether the user can change the canvas positions of task event items in the control by drag and drop operations.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.SnapRearrangedItemsToGuidelines">
+            <summary>
+            Gets or sets a value that indicates whether the task event item shapes are snapping to row and column based guidelines in the control during drag and drop based rearrange operations.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ItemWidth">
+            <summary>
+            Gets or sets the column width of any item presented in the chart; by default it is set to 40.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ItemHeight">
+            <summary>
+            Gets or sets the row height of any item presented in the chart; by default it is set to 40.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.AspectRatio">
+            <summary>
+            Gets or sets the aspect ratio of the chart, indicating the rate between horizontal and vertical item layout positioning.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ShapeWidth">
+            <summary>
+            Gets or sets the column width of any shape presented in the chart; by default it is set to 32.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ShapeHeight">
+            <summary>
+            Gets or sets the row height of any shape presented in the chart; by default it is set to 32.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.DependencyTextBlockWidth">
+            <summary>
+            Gets or sets the width of the dependency text blocks displayed in the chart for dependency lines at initialization time; by default it is set to 120.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ChartMargin">
+            <summary>
+            Gets or sets the margin to preserve around the chart; by default it is set to 16.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ShapeCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the shapes in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ShapeFill">
+            <summary>
+            Gets or sets the color to be used to fill the shapes in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ShapeStroke">
+            <summary>
+            Gets or sets the color to be used to draw the borders of the shapes in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.DependencyLineCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to apply to polylines displayed between dependent task event shapes in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.VirtualEffortDependencyLineCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to apply to virtual effort polylines displayed between dependent task event shapes in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.DependencyLineStroke">
+            <summary>
+            Gets or sets the color to be used to draw the polylines displayed between dependent task event shapes in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.DependencyTextCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to apply to the text displayed on the task dependency line in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.DependencyTextStroke">
+            <summary>
+            Gets or sets the color to be used to use for the text displayed on the task dependency line in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.IsTaskEventToolTipVisible">
+            <summary>
+            Gets or sets a value that determines whether task event shape tool tips are presented.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.IsDependencyToolTipVisible">
+            <summary>
+            Gets or sets a value that determines whether dependency line tool tips are presented.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.TaskEventTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, and item parameters), returning SVG content to be presented for all the items in the chart (usually a task event shape).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ExtraTaskEventTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, and item parameters), returning extra SVG content to be presented for items in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.ItemTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, and item parameters), returning SVG content to be presented for a specific item in the chart (usually a tool tip).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.DependencyLineTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, item, and predecessor item parameters), returning SVG content to be presented as dependency line for an item and a specified predecessor item in the chart, between a task event and its predecessor (usually a polyline computed based on the task event and predecessor shape positions in the chart).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.PredecessorItemTemplateClientCode">
+            <summary>
+            Gets or sets a set of JavaScript function body code statements (considering control, item, and predecessor item parameters), returning SVG content to be presented for an item and a specific predecessor item in the chart (usually a tool tip).
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetValue``1(System.String,``0)">
+            <summary>
+            Gets a setting value.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.SetValue``1(System.String,``0)">
+            <summary>
+            Sets a setting value.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.OnPreRender">
+            <summary>
+            Called before rendering (i.e. ToString call).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartView.Items">
+            <summary>
+            Gets or sets the task event items to be presented in the PERT Chart.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.ToString">
+            <summary>
+            Renders the contents of the control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.IsCritical(DlhSoft.Web.Mvc.Pert.PredecessorItem)">
+            <summary>
+            Gets a value indicating whether the specified predecessor item is critical within the project consisting of all task event dependencies within the control.
+            </summary>
+            <param name="item">The predecessor item to check.</param>
+            <returns>A value indicating whether the specified predecessor item is critical within the project consisting of all task event dependencies within the control.</returns>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.IsCritical(DlhSoft.Web.Mvc.Pert.PertChartItem)">
+            <summary>
+            Gets a value indicating whether the specified item is critical within the project consisting of all task event dependencies within the control.
+            </summary>
+            <param name="item">The item to check.</param>
+            <returns>A value indicating whether the specified item is critical within the project consisting of all task event dependencies within the control.</returns>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetCriticalDependencies">
+            <summary>
+            Iterates the critical predecessor items of the project consisting of all task event dependencies within the control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetStart">
+            <summary>
+            Retreives the start item of the chart.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetFinish">
+            <summary>
+            Retreives the finish item of the chart.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetCriticalItems">
+            <summary>
+            Iterates the critical items of the project consisting of all task event dependencies within the control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetPredecessors(DlhSoft.Web.Mvc.Pert.PertChartItem)">
+            <summary>
+            Iterates predecessor items of the specified item satisfying the specified dependency type condition in the PERT Chart related collection as PertChartItem objects.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetSuccessors(DlhSoft.Web.Mvc.Pert.PertChartItem)">
+            <summary>
+            Iterates successor items of the specified item in the PERT Chart related collection (i.e. those that have the specified item defined as a predecessor of any dependency type).
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartView.GetSuccessorPredecessorItems(DlhSoft.Web.Mvc.Pert.PertChartItem)">
+            <summary>
+            Iterates successor items of the specified item in the PERT Chart related collection (i.e. those that have the specified item defined as a predecessor of any dependency type) as PredecessorItem objects.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem">
+            <summary>
+            Represents a task item to be presented in a <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView"/> control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.#ctor">
+            <summary>
+            Initializes a new <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem"/> instance.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Content">
+            <summary>
+            Gets or sets the content of the current item, displayed in the <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView">NetworkDiagramView</see> control.
+            It is passed to the client side as the item.content field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.DisplayedText">
+            <summary>
+            Gets or sets the textual abbreviation of the current item, displayed within the <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView">NetworkDiagramView</see> control.
+            It is passed to the client side as the item.displayedText field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.EarlyStart">
+            <summary>
+            Gets or sets the early start date and time of the current task item.
+            It is passed to the client side as the item.earlyStart field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.EarlyFinish">
+            <summary>
+            Gets or sets the early finish date and time of the current task item.
+            It is passed to the client side as the item.earlyFinish field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.LateStart">
+            <summary>
+            Gets or sets the late start date and time of the current task item.
+            It is passed to the client side as the item.lateStart field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.LateFinish">
+            <summary>
+            Gets or sets the late finish date and time of the current task item.
+            It is passed to the client side as the item.lateFinish field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Effort">
+            <summary>
+            Gets or sets the effort of the current task item.
+            It is passed to the client side as the item.effort field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.IsMilestone">
+            <summary>
+            Gets or sets a value indicating whether the current item represents a milestone.
+            A milestone task is displayed in the Network Diagram view using a different shape template
+            It is passed to the client side as the item.isMilestone field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Slack">
+            <summary>
+            Gets or sets the slack of the current task item.
+            It is passed to the client side as the item.slack field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Predecessors">
+            <summary>
+            Gets or sets a collection that defines predecessor items referring the task items that the current item depends of, and having the relations displayed in the Network Diagram view as dependency lines.
+            It is passed to the client side as the item.predecessors array accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.IsShapeVisible">
+            <summary>
+            Gets or sets a value that indicates whether the task shape is displayed in the chart area for this item.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.ShapeCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to all item shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.ShapeFill">
+            <summary>
+            Gets or sets the color used to fill the task shape of the current item in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.ShapeStroke">
+            <summary>
+            Gets or sets the color used to draw the borders of the task shape of the current item in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.MilestoneCssClass">
+            <summary>
+            Gets or sets the CSS class to supplementary apply to milestone shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.MilestoneStroke">
+            <summary>
+            Gets or sets the color used to draw the borders of the milestone shape of the current item in the chart, if it is declared as a milestone.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.TaskTemplateClientCode">
+            <summary>
+            Gets or sets a set of function body code statements (considering item parameter), returning SVG content to be presented for the current item in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.DisplayedRowIndex">
+            <summary>
+            Gets or sets the desired row index to be used for positioning the current item shape vertically when displaying it in the <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView">NetworkDiagramView</see> control (NaN by default, i.e. automatically positioned; non-integral values are supported to position items using custom non-grid alignment).
+            It is passed to the client side as the item.displayedRowIndex field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.DisplayedColumnIndex">
+            <summary>
+            Gets or sets the desired column index to be used for positioning the current item shape vertically when displaying it in the <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView">NetworkDiagramView</see> control (NaN by default, i.e. automatically positioned; non-integral values are supported to position items using custom non-grid alignment).
+            It is passed to the client side as the item.displayedColumnIndex field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.CustomValues">
+            <summary>
+            Gets or sets a dictionary representing custom properties and values for the current item.
+            The values are passed to the client side as read only item.custom{Key}Value fields accessible from the client code ({Key} gets replaced by the actual dictionary key values).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Tag">
+            <summary>
+            Gets or sets an object that contains information that is associated with the current item.
+            The value should be serializable as it is internally preserved within the ViewState of the page.
+            It is passed to the client side as the read only item.tag field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Key">
+            <summary>
+            Gets or sets an associated external numeric key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.key field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.GlobalKey">
+            <summary>
+            Gets or sets an associated external globally unique key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.globalKey field accessible from the client code.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem">
+            <summary>
+            Represents a predecessor item generating a dependency between another task and the current task, within the <see cref="P:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem.Predecessors"/> collection of a <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramItem">NetworkDiagramItem</see> object.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem.Item">
+            <summary>
+            Gets or sets the task item that precedes the owner of the predecessor item (the item that the current item depends of).
+            It is passed to the client side as the read only predecessorItem.item field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem.DependencyLineCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the dependency line in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem.DependencyLineStroke">
+            <summary>
+            Gets or sets the color used to draw the dependency line in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem.Tag">
+            <summary>
+            Gets or sets an object that contains information that is associated with the current item.
+            The value is not internally preserved within the ViewState of the page.
+            It is passed to the client side as the read only item.tag field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem.Key">
+            <summary>
+            Gets or sets an associated external numeric key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.key field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.NetworkPredecessorItem.GlobalKey">
+            <summary>
+            Gets or sets an associated external globally unique key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.globalKey field accessible from the client code.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.PertChartItem">
+            <summary>
+            Represents a task event item to be presented in a <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView"/> control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.Mvc.Pert.PertChartItem.#ctor">
+            <summary>
+            Initializes a new <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartItem"/> instance.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.Content">
+            <summary>
+            Gets or sets the content of the current item, displayed in the <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView">PertChartView</see> control.
+            It is passed to the client side as the item.content field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.DisplayedText">
+            <summary>
+            Gets or sets the textual abbreviation of the current item, displayed within the <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView">PertChartView</see> control.
+            It is passed to the client side as the item.displayedText field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.Predecessors">
+            <summary>
+            Gets or sets a collection that defines predecessor items referring the task event items that the current item depends of, and having the relations displayed in the PERT Chart view as dependency lines.
+            It is passed to the client side as the item.predecessors array accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.IsShapeVisible">
+            <summary>
+            Gets or sets a value that indicates whether the task event shape is displayed in the chart area for this item.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.ShapeCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to all item shapes in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.ShapeFill">
+            <summary>
+            Gets or sets the color used to fill the task event shape of the current item in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.ShapeStroke">
+            <summary>
+            Gets or sets the color used to draw the borders of the task event shape of the current item in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.TaskEventTemplateClientCode">
+            <summary>
+            Gets or sets a set of function body code statements (considering item parameter), returning SVG content to be presented for the current item in the diagram.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.DisplayedRowIndex">
+            <summary>
+            Gets or sets the desired row index to be used for positioning the current item shape vertically when displaying it in the <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView">PertChartView</see> control (NaN by default, i.e. automatically positioned; non-integral values are supported to position items using custom non-grid alignment).
+            It is passed to the client side as the item.displayedRowIndex field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.DisplayedColumnIndex">
+            <summary>
+            Gets or sets the desired column index to be used for positioning the current item shape vertically when displaying it in the <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView">PertChartView</see> control (NaN by default, i.e. automatically positioned; non-integral values are supported to position items using custom non-grid alignment).
+            It is passed to the client side as the item.displayedColumnIndex field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.CustomValues">
+            <summary>
+            Gets or sets a dictionary representing custom properties and values for the current item.
+            The values are passed to the client side as read only item.custom{Key}Value fields accessible from the client code ({Key} gets replaced by the actual dictionary key values).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.Tag">
+            <summary>
+            Gets or sets an object that contains information that is associated with the current item.
+            The value should be serializable as it is internally preserved within the ViewState of the page.
+            It is passed to the client side as the read only item.tag field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.Key">
+            <summary>
+            Gets or sets an associated external numeric key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.key field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PertChartItem.GlobalKey">
+            <summary>
+            Gets or sets an associated external globally unique key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.globalKey field accessible from the client code.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.PredecessorItem">
+            <summary>
+            Represents a predecessor item generating a dependency between another task event and the current task event, within the <see cref="P:DlhSoft.Web.Mvc.Pert.PertChartItem.Predecessors"/> collection of a <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartItem">PertChartItem</see> object.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.Item">
+            <summary>
+            Gets or sets the task event item that precedes the owner of the predecessor item (the item that the current item depends of).
+            It is passed to the client side as the read only predecessorItem.item field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.Content">
+            <summary>
+            Gets or sets the content of the current predecessor item, displayed in the <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView">PertChartView</see> control.
+            It is passed to the client side as the predecessorItem.content field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.DisplayedText">
+            <summary>
+            Gets or sets the textual abbreviation of the current predecessor item, displayed within the <see cref="T:DlhSoft.Web.Mvc.Pert.PertChartView">PertChartView</see> control.
+            It is passed to the client side as the predecessorItem.displayedText field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.Effort">
+            <summary>
+            Gets or sets the task effort represented by the current predecessor item.
+            It is passed to the client side as the predecessorItem.effort field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.IsEffortVirtual">
+            <summary>
+            Gets or sets a value indicating whether the task effort represented by the current predecessor item is virtual, displayed as a dashed line in the chart.
+            It is passed to the client side as the predecessorItem.isEffortVirtual field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.DependencyLineCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the dependency line in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.DependencyLineStroke">
+            <summary>
+            Gets or sets the color used to draw the dependency line in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.DependencyTextCssClass">
+            <summary>
+            Gets or sets the CSS class to apply to the dependency line text in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.DependencyTextStroke">
+            <summary>
+            Gets or sets the color of the dependency line text in the chart.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.Tag">
+            <summary>
+            Gets or sets an object that contains information that is associated with the current item.
+            The value is not internally preserved within the ViewState of the page.
+            It is passed to the client side as the read only item.tag field accessible from the client code (ToString method is used to convert the value).
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.Key">
+            <summary>
+            Gets or sets an associated external numeric key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.key field accessible from the client code.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.Mvc.Pert.PredecessorItem.GlobalKey">
+            <summary>
+            Gets or sets an associated external globally unique key for the current item.
+            When set to a non-zero value, it is passed to the client side as the read only item.globalKey field accessible from the client code.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.PresentationTarget">
+            <summary>
+            Indicates the target settings to be applied when default values are used (i.e. when specific values are not indicated) for certain appearance properties of a <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView"/> control.
+            </summary>
+        </member>
+        <member name="F:DlhSoft.Web.Mvc.Pert.PresentationTarget.Standard">
+            <summary>
+            Presents the Gantt Chart area with an optional attached data grid, suitable with large output screen application development.
+            </summary>
+        </member>
+        <member name="F:DlhSoft.Web.Mvc.Pert.PresentationTarget.Phone">
+            <summary>
+            Presents the Gantt Chart area without an attached data grid, displaying the task content values instead of assignments content values, best suitable for Microsoft® Windows® Phone® 8 or other small output screen application development.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.Mvc.Pert.PresentationTheme">
+            <summary>
+            Indicates the theme settings to be applied when default values are used (i.e. when specific values are not indicated) for certain appearance properties of a <see cref="T:DlhSoft.Web.Mvc.Pert.NetworkDiagramView"/> control.
+            </summary>
+        </member>
+        <member name="F:DlhSoft.Web.Mvc.Pert.PresentationTheme.Modern">
+            <summary>
+            Presents the task bars and other visual elements in the Gantt Chart using a simple modern style using solid colors and square corners, similar to Modern UI style application development in Microsoft® Windows® 8.
+            </summary>
+        </member>
+        <member name="F:DlhSoft.Web.Mvc.Pert.PresentationTheme.ModernBordered">
+            <summary>
+            Presents the task bars and other visual elements in the Gantt Chart using a simple modern style using solid colors and square corners, while higher contrast solid borders are applied to the elements in order to to enable easier visual identification.
+            </summary>
+        </member>
+        <member name="F:DlhSoft.Web.Mvc.Pert.PresentationTheme.Aero">
+            <summary>
+            Presents the task bars and other visual elements in the Gantt Chart using a previously common style using full gradients and round corners, similar to Aero presentation in Microsoft® Windows® 7 and Vista®.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.UI.WebControls.Pert.Licensing.PertChartView">
+            <summary>
+            Provides licensing utilities for PertChartView control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.UI.WebControls.Pert.Licensing.PertChartView.SetLicense(System.String)">
+            <summary>
+            Predefines the license content to be considered for PertChartView component instances, at initialization time.
+            </summary>
+            <param name="licenseContent">The XML content string of the license to be defined for this component type.</param>
+        </member>
+        <member name="T:DlhSoft.Web.UI.WebControls.Pert.Licensing.NetworkDiagramView">
+            <summary>
+            Provides licensing utilities for NetworkDiagramView control.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.UI.WebControls.Pert.Licensing.NetworkDiagramView.SetLicense(System.String)">
+            <summary>
+            Predefines the license content to be considered for NetworkDiagramView component instances, at initialization time.
+            </summary>
+            <param name="licenseContent">The XML content string of the license to be defined for this component type.</param>
+        </member>
+    </members>
+</doc>

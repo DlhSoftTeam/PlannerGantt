@@ -48,12 +48,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DlhSoft.ProjectData.GanttChart.ASP.Controls, Version=5.2.7.2, Culture=neutral, PublicKeyToken=6071b28da0134838, processorArchitecture=MSIL">
-      <HintPath>..\packages\DlhSoft.GanttChartWebLibrary.5.2.7.2\lib\net40\DlhSoft.ProjectData.GanttChart.ASP.Controls.dll</HintPath>
+    <Reference Include="DlhSoft.ProjectData.GanttChart.ASP.Controls, Version=5.2.8.4, Culture=neutral, PublicKeyToken=6071b28da0134838, processorArchitecture=MSIL">
+      <HintPath>..\packages\DlhSoft.GanttChartWebLibrary.5.2.9.5\lib\net452\DlhSoft.ProjectData.GanttChart.ASP.Controls.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DlhSoft.ProjectData.PertChart.ASP.Controls, Version=5.2.7.2, Culture=neutral, PublicKeyToken=6071b28da0134838, processorArchitecture=MSIL">
-      <HintPath>..\packages\DlhSoft.GanttChartWebLibrary.5.2.7.2\lib\net40\DlhSoft.ProjectData.PertChart.ASP.Controls.dll</HintPath>
+    <Reference Include="DlhSoft.ProjectData.PertChart.ASP.Controls, Version=5.2.8.3, Culture=neutral, PublicKeyToken=6071b28da0134838, processorArchitecture=MSIL">
+      <HintPath>..\packages\DlhSoft.GanttChartWebLibrary.5.2.9.5\lib\net452\DlhSoft.ProjectData.PertChart.ASP.Controls.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">

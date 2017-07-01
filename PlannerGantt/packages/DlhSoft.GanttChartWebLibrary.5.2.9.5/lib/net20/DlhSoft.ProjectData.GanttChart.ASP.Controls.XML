@@ -87,31 +87,6 @@
             </summary>
             <param name="time">The time interval to move towards past.</param>
         </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.SetItems(System.Collections.Generic.IEnumerable{DlhSoft.Web.UI.WebControls.GanttChartItem})">
-            <summary>
-            Sets the item collection.
-            </summary>
-            <param name="items">The item collection to set.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.AddItem(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Adds an item to the collection.
-            </summary>
-            <param name="item">The item to add.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.InsertItem(System.Int32,DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Inserts an item to the collection at a specified index.
-            </summary>
-            <param name="index">The index to insert the item at.</param>
-            <param name="item">The item to insert.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.RemoveItem(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Removes an item from the collection.
-            </summary>
-            <param name="item">The item to remove.</param>
-        </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.Expand(DlhSoft.Web.UI.WebControls.GanttChartItem)">
             <summary>
             Expands the specified summary item.
@@ -123,18 +98,6 @@
             Collapses the specified summary item.
             </summary>
             <param name="item">The summary item to collapse.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.IncreaseItemIndentation(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Increases the item indentation for the specified item.
-            </summary>
-            <param name="item">The item to increase indentation for.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.DecreaseItemIndentation(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Decreases the item indentation for the specified item.
-            </summary>
-            <param name="item">The item to increase indentation for.</param>
         </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ScrollTo(DlhSoft.Web.UI.WebControls.GanttChartItem)">
             <summary>
@@ -152,66 +115,6 @@
             Scrolls the view horizontally to present a specific date and time in the chart viewport.
             </summary>
             <param name="dateTime">The date and time to scroll to.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.MoveItem(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Int32,System.Boolean)">
-            <summary>
-            Moves the specified item to a new index in the collection, preserving its hierarchical validity, optionally with its entire following children array.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.MoveItemUp(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Boolean,System.Boolean)">
-            <summary>
-            Moves the specified item up in the collection, optionally with its entire following children array, and optionally ensuring preserving the current parent item.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.CanMoveItemUp(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Boolean,System.Boolean)">
-            <summary>
-            Returns a value that indicates whether the specified item may be moved up in the collection, optionally with its entire following children array, and optionally ensuring preserving the current parent item.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.MoveItemDown(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Boolean,System.Boolean)">
-            <summary>
-            Moves the specified item down in the collection, optionally with its entire following children array, and optionally ensuring preserving the current parent item.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.CanMoveItemDown(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Boolean,System.Boolean)">
-            <summary>
-            Returns a value that indicates whether the specified item may be moved down in the collection, optionally with its entire following children array, and optionally ensuring preserving the current parent item.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultItemComparison(DlhSoft.Web.UI.WebControls.GanttChartItem,DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Default item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">sorting</see> items based on their content.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.StartItemComparison(DlhSoft.Web.UI.WebControls.GanttChartItem,DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">sorting</see> items based on their <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.Start"/> property.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.FinishItemComparison(DlhSoft.Web.UI.WebControls.GanttChartItem,DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">sorting</see> items based on their <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.Finish"/> property.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.CompletedFinishItemComparison(DlhSoft.Web.UI.WebControls.GanttChartItem,DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">sorting</see> items based on their <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.CompletedFinish"/> property.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.AssignmentsItemComparison(DlhSoft.Web.UI.WebControls.GanttChartItem,DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">sorting</see> items based on their <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.AssignmentsContent"/> property.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">
-            <summary>
-            Hierarchically sorts all task items in the collection based on the optionally specified parameters.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.Sort(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Comparison{DlhSoft.Web.UI.WebControls.GanttChartItem},System.Boolean)">
-            <summary>
-            Hierarchically sorts the child items within a specified root task item in the collection based on the other optionally specified parameters.
-            </summary>
         </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.Print(System.String,System.String,System.Boolean,System.Int32[],System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Double,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Boolean)">
             <summary>
@@ -279,16 +182,6 @@
             </summary>
             <returns>The total completed effort of the project consisting of all standard tasks within the control.</returns>
         </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetProjectTotalEffort">
-            <summary>
-            Gets the total effort of the project consisting of all standard tasks within the control, multiplying their durations by their total assignment allocation units.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetProjectTotalCompletedEffort">
-            <summary>
-            Gets the total completed effort of the project consisting of all standard tasks within the control, multiplying their durations by their total assignment allocation units.
-            </summary>
-        </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetProjectCompletion">
             <summary>
             Gets the completion rate of the project consisting of all standard tasks within the control (between 0 and 1).
@@ -345,95 +238,6 @@
             </summary>
             <param name="criticalDelay">The critical delay to be considered when determining critical dependent tasks.</param>
         </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignments(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Iterates the list of assignments (defined as resource names and associated allocation units) from a specific task within the control.
-            Requires that AssignmentsContent property of the task item is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="item">The task item to get the assignments of.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignedResources(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Iterates the list of assignments (defined as resource names) from a specific task within the control.
-            Requires that AssignmentsContent property of the task item is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="item">The task item to get the assignments of.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignments(System.String)">
-            <summary>
-            Iterates the list of standard task assignments (defined as task items and associated allocation units) for a specific resource within the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="resourceName">The resource name to get the assignments of.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignedItems(System.String)">
-            <summary>
-            Iterates the list of standard task assignments (defined as task items) for a specific resource within the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="resourceName">The resource name to get the assignments of.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignedResources">
-            <summary>
-            Iterates the list of assigned resources (unique entries) from all standard tasks within the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.AddAssignment(DlhSoft.Web.UI.WebControls.GanttChartItem,System.String)">
-            <summary>
-            Adds the specified resource as an assignment to the AssignmentsContent property value of a specific task in the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="item">The task item to add the assignment to.</param>
-            <param name="resourceName">The resource name to add as an assignment.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.AddAssignment(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Collections.Generic.KeyValuePair{System.String,System.Double})">
-            <summary>
-            Adds the specified assignment (identified as a pair of resource name and allocation units) to the AssignmentsContent property value of a specific task in the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="item">The task item to add the assignment to.</param>
-            <param name="assignment">The assignment to add.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.RemoveAssignment(DlhSoft.Web.UI.WebControls.GanttChartItem,System.String)">
-            <summary>
-            Removes the specified resource assignment from the AssignmentsContent property value of a specific task in the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="item">The task item to remove the assignment from.</param>
-            <param name="resourceName">The resource name of the assignment to remove.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAllocations(System.String)">
-            <summary>
-            Iterates the time interval based allocations from standard tasks assigned to a specific resource within the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="resourceName">The resource name to get allocations for.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.EnsureDependencyConstraints">
-            <summary>
-            Ensures that dependency constrains between tasks are enforced.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.EnsureDependencyConstraints(System.Boolean)">
-            <summary>
-            Ensures that dependency constrains between tasks are enforced.
-            </summary>
-            <param name="includeStartedTasks">A value indicating whether or not to consider already started tasks (i.e. having completion > 0) for dependency constraint enforcement.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.EnsureDependencyConstraints(System.DateTime)">
-            <summary>
-            Ensures that dependency constrains between tasks are enforced.
-            </summary>
-            <param name="start">The start date and time to consider for dependency constraint enforcement.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.EnsureDependencyConstraints(System.Boolean,System.DateTime)">
-            <summary>
-            Ensures that dependency constrains between tasks are enforced.
-            </summary>
-            <param name="includeStartedTasks">A value indicating whether or not to consider already started tasks (i.e. having completion > 0) for dependency constraint enforcement.</param>
-            <param name="start">The start date and time to consider for dependency constraint enforcement.</param>
-        </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.SetupBaseline">
             <summary>
             Initializes <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.BaselineStart"/> and <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.BaselineFinish"/> values of standard and milestone task items within the control based on their actual <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.Start"/> and <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.Finish"/> values.
@@ -458,183 +262,6 @@
             <param name="remainingSuffix">The suffix to apply to the Content property value for the new remaining work item.</param>
             <param name="completedSuffix">The suffix to apply to the Content property value for the original item.</param>
             <returns>The new remaining work item that can be rescheduled as needed.</returns>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.OptimizeWork(DlhSoft.Web.UI.WebControls.GanttChartItem,System.Boolean,System.Boolean,System.Nullable{System.DateTime})">
-            <summary>
-            Optimizes schedule times of the specified item in order to optimize the project finish date without leveling resources, respecting dependency constraints.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.OptimizeWork(System.Boolean,System.Boolean,System.Nullable{System.DateTime})">
-            <summary>
-            Optimizes schedule times of all managed items in order to optimize the project finish date without leveling resources, respecting dependency constraints.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LevelAllocations(DlhSoft.Web.UI.WebControls.GanttChartItem[])">
-            <summary>
-            Levels the assigned allocation units assuming that all or the specified tasks within the control are fixed duration and effort driven.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having weight allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LevelResources">
-            <summary>
-            Levels the assigned resources from all standard tasks within the control in order to avoid over allocation, by updating task timing values accordingly.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            The resource leveling algorithm is applied starting from the current date and time, and without considering already started tasks.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LevelResources(System.Boolean)">
-            <summary>
-            Levels the assigned resources from all standard tasks within the control in order to avoid over allocation, by updating task timing values accordingly.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            The resource leveling algorithm is applied starting from the current date and time.
-            </summary>
-            <param name="includeStartedTasks">A value indicating whether or not to consider already started tasks (i.e. having completion > 0) for resource leveling.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LevelResources(System.DateTime)">
-            <summary>
-            Levels the assigned resources from all standard tasks within the control in order to avoid over allocation, by updating task timing values accordingly.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            The resource leveling algorithm is applied without considering already started tasks.
-            </summary>
-            <param name="start">The start date and time to consider for resource leveling algorithm.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LevelResources(System.Boolean,System.DateTime)">
-            <summary>
-            Levels the assigned resources from all standard tasks within the control in order to avoid over allocation, by updating task timing values accordingly.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="includeStartedTasks">A value indicating whether or not to consider already started tasks (i.e. having completion > 0) for resource leveling.</param>
-            <param name="start">The start date and time to consider for resource leveling algorithm.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignmentsCost(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Gets the assignments cost of the specified task, summing up <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultResourceUsageCost"/> or <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.SpecificResourceUsageCosts"/>, and <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultResourceHourCost"/> or <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.SpecificResourceHourCosts"/> multiplied by work effort hours (for standard tasks).
-            The value is eventually multiplied by assignment allocation units (if set).
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetExtraCost(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Gets the extra cost of the specified task, summing up <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.TaskInitiationCost"/>, the value returned by <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetAssignmentsCost(DlhSoft.Web.UI.WebControls.GanttChartItem)"/> method, and child task costs (for summary tasks).
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetCost(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Gets the total cost of the specified task, summing up <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartItem.ExecutionCost"/> and the value returned by <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetExtraCost(DlhSoft.Web.UI.WebControls.GanttChartItem)"/> method.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetResourceCost(System.String)">
-            <summary>
-            Gets the assignments cost of the specified resource, summing up <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultResourceUsageCost"/> or <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.SpecificResourceUsageCosts"/>, and <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultResourceHourCost"/> or <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.SpecificResourceHourCosts"/> multiplied by work effort hours (for standard tasks).
-            The value is eventually multiplied by assignment allocation units (if set).
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetProjectCost">
-            <summary>
-            Gets the total cost of the project consisting of the root managed tasks.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetScheduleChartItems(System.Collections.Generic.List{System.String})">
-            <summary>
-            Gets a collection of <see cref="T:DlhSoft.Web.UI.WebControls.ScheduleChartItem">ScheduleChartItem</see> objects that may be used as an item collection within an associated <see cref="T:DlhSoft.Web.UI.WebControls.ScheduleChartView">ScheduleChartView</see> control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="assignableResources">The minimum set of assignable resources to generate the Schedule Chart items for.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetLoadChartItems(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Gets a collection of <see cref="T:DlhSoft.Web.UI.WebControls.LoadChartItem">LoadChartItem</see> objects that may be used as an item collection within an associated <see cref="T:DlhSoft.Web.UI.WebControls.LoadChartView">LoadChartView</see> control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="resources">The optional set of resources to generate the Load Chart items for.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetPertChartItems(System.Int32,System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Gets a collection of <see cref="T:DlhSoft.Web.UI.WebControls.Pert.PertChartItem">PertChartItem</see> objects that may be used as an item collection within an associated <see cref="T:DlhSoft.Web.UI.WebControls.Pert.PertChartView">PertChartView</see> control.
-            </summary>
-            <param name="maxIndentation">The maximum indentation to consider.</param>
-            <param name="startContent">The content to be set on the start task event.</param>
-            <param name="finishContent">The content to be set on the finish task event.</param>
-            <param name="linkContent">The content to be set on automatically generated link tasks.</param>
-            <param name="completedContentTemplate">The string format to be used for setting the content of the completed task events. Available fields: {Content}.</param>
-            <param name="startingContentTemplate">The string format to be used for setting the content of the starting task events. Available fields: {Content}.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetNetworkDiagramItems(System.Int32,System.String,System.String)">
-            <summary>
-            Gets a collection of <see cref="T:DlhSoft.Web.UI.WebControls.Pert.NetworkDiagramItem">NetworkDiagramItem</see> objects that may be used as an item collection within an associated <see cref="T:DlhSoft.Web.UI.WebControls.Pert.NetworkDiagramView">NetworkDiagramView</see> control.
-            </summary>
-            <param name="maxIndentation">The maximum indentation to consider.</param>
-            <param name="startContent">The content to be set on the start task event.</param>
-            <param name="finishContent">The content to be set on the finish task event.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetPertCriticalItems">
-            <summary>
-            Enumerates items of the critical path determined considering Program Evaluation and Review Technique (PERT).
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LoadProjectXml(System.IO.Stream)">
-            <summary>
-            Loads data from a Project XML stream.
-            </summary>
-            <param name="stream">The stream to load data from.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LoadProjectXml(System.IO.Stream,System.Collections.Generic.IList{System.String})">
-            <summary>
-            Loads data from a Project XML stream.
-            </summary>
-            <param name="stream">The stream to load data from.</param>
-            <param name="assignableResources">The list of strings that should hold assignable resources.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LoadProjectXml(System.Xml.Linq.XDocument)">
-            <summary>
-            Loads data from a Project XML document.
-            </summary>
-            <param name="document">The document to load data from.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LoadProjectXml(System.Xml.Linq.XDocument,System.Collections.Generic.IList{System.String})">
-            <summary>
-            Loads data from a Project XML document.
-            </summary>
-            <param name="document">The document to load data from.</param>
-            <param name="assignableResources">The list of strings that should hold assignable resources.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LoadProjectXml(System.String)">
-            <summary>
-            Loads data from a Project XML string.
-            </summary>
-            <param name="xml">The string to load data from.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.LoadProjectXml(System.String,System.Collections.Generic.IList{System.String})">
-            <summary>
-            Loads data from a Project XML string.
-            </summary>
-            <param name="xml">The string to load data from.</param>
-            <param name="assignableResources">The list of strings that should hold assignable resources.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.SaveProjectXml(System.IO.Stream)">
-            <summary>
-            Saves data to a Project XML stream.
-            </summary>
-            <param name="stream">The stream to save data to.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.SaveProjectXml(System.IO.Stream,System.Collections.Generic.IList{System.String})">
-            <summary>
-            Saves data to a Project XML stream.
-            </summary>
-            <param name="stream">The stream to save data to.</param>
-            <param name="assignableResources">The list of strings that holds assignable resources.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetProjectXml">
-            <summary>
-            Gets data as a Project XML string.
-            </summary>
-            <returns>The Project XML string.</returns>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetProjectXml(System.Collections.Generic.IList{System.String})">
-            <summary>
-            Gets data as a Project XML string.
-            </summary>
-            <returns>The Project XML string.</returns>
-            <param name="assignableResources">The list of strings that holds assignable resources.</param>
         </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetIndexString(DlhSoft.Web.UI.WebControls.GanttChartItem)">
             <summary>
@@ -763,11 +390,6 @@
             Gets the effort of the specified task item.
             </summary>
         </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetTotalEffort(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Gets the total effort of the task, multiplying its duration by its total assignment allocation units.
-            </summary>
-        </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.SetEffort(DlhSoft.Web.UI.WebControls.GanttChartItem,System.TimeSpan)">
             <summary>
             Sets the effort of the specified task item.
@@ -778,19 +400,9 @@
             Gets the duration value of the specified task item, as the working time difference between Start and Finish values.
             </summary>
         </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.UpdateParentTiming(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Updates the start and finish values for the parent hierarchy of the specified task item.
-            </summary>
-        </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetCompletedEffort(DlhSoft.Web.UI.WebControls.GanttChartItem)">
             <summary>
             Gets the completed effort of the specified task item.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetTotalCompletedEffort(DlhSoft.Web.UI.WebControls.GanttChartItem)">
-            <summary>
-            Gets the total completed effort of the task, multiplying its completed duration by its total assignment allocation units.
             </summary>
         </member>
         <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.SetCompletedEffort(DlhSoft.Web.UI.WebControls.GanttChartItem,System.TimeSpan)">
@@ -1588,291 +1200,14 @@
             Occurs upon server post backs when selection state of a specific item in the <see cref="P:DlhSoft.Web.UI.WebControls.GanttChartView.Items"/> collection of the control changes.
             </summary>
         </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ResourceQuantities">
+        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ResourceSchedules">
             <summary>
-            Gets or sets the quantity values to consider when leveling resources, indicating maximum amounts of materials available for use at the same time.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.MaxLoadChartDisplayedResourceQuantity">
-            <summary>
-            Gets or sets a value that indicates the maximum quantity displayed as 100% height in the Load Chart when using <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.GetLoadChartItems(System.Collections.Generic.IEnumerable{System.String})"/> method.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.TaskInitiationCost">
-            <summary>
-            Gets or sets the initiation cost value to apply to the managed tasks.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultResourceUsageCost">
-            <summary>
-            Gets or sets the default usage cost value to apply for the assigned resources of the managed tasks.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.SpecificResourceUsageCosts">
-            <summary>
-            Gets or sets the specific usage cost values to apply for the assigned resources of the managed tasks.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.DefaultResourceHourCost">
-            <summary>
-            Gets or sets the default hour cost value to apply for the assigned resources of the managed tasks.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.SpecificResourceHourCosts">
-            <summary>
-            Gets or sets the specific hour cost values to apply for the assigned resources of the managed tasks.
+            Gets or sets the resource schedules (working and nonworking time definitions) to consider when scheduling items with assigned resources (considering the resource with the maximum assigned allocation units value for each item, and assuming they do not have specific schedules defined themselves).
             </summary>
         </member>
         <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.MaxNonworkingIntervalSearchSpan">
             <summary>
             Gets or sets the maximum time span to search for nonworking intervals within when using the Get*Nonworking* methods of the Gantt Chart control instances.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer">
-            <summary>
-            Represents a data serializer used to persist the contents of a <see cref="T:DlhSoft.Web.UI.WebControls.GanttChartView">GanttChartView</see> control within a Project XML file.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.#ctor(DlhSoft.Web.UI.WebControls.GanttChartView)">
-            <summary>
-            Initializes a new instance of the <see cref="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer">ProjectXmlSerializer</see> class.
-            </summary>
-            <param name="control">The <see cref="T:DlhSoft.Web.UI.WebControls.GanttChartView">GanttChartView</see> control instance to persist contents of.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.#ctor(DlhSoft.Web.UI.WebControls.GanttChartView,System.Collections.Generic.IList{System.String})">
-            <summary>
-            Initializes a new instance of the <see cref="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer">ProjectXmlSerializer</see> class.
-            </summary>
-            <param name="control">The <see cref="T:DlhSoft.Web.UI.WebControls.GanttChartView">GanttChartView</see> control instance to persist contents of.</param>
-            <param name="assignableResources">The list of strings that should hold assignable resources.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.IO.Stream)">
-            <summary>
-            Loads data from a Project XML stream.
-            </summary>
-            <param name="projectXmlStream">The stream to load data from.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.Xml.Linq.XDocument)">
-            <summary>
-            Loads data from a Project XML document.
-            </summary>
-            <param name="projectXmlDcoument">The document to load data from.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.String)">
-            <summary>
-            Loads data from a Project XML string.
-            </summary>
-            <param name="projectXml">The string to load data from.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">
-            <summary>
-            Saves data to a Project XML stream.
-            </summary>
-            <param name="projectXmlStream">The stream to save data to.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GetXml">
-            <summary>
-            Gets Project XML string.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Control">
-            <summary>
-            Gets <see cref="T:DlhSoft.Web.UI.WebControls.GanttChartView">GanttChartView</see> control instance to persist contents of.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ProjectInfoLoading">
-            <summary>
-            Occurs when project information is retreived based on a source project XML element during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.Xml.Linq.XDocument)">Load</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemLoading">
-            <summary>
-            Occurs when a GanttChartItem object is instantiated based on a source task XML element during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.Xml.Linq.XDocument)">Load</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoLoading">
-            <summary>
-            Occurs when assignment information is about to be set on a GanttChartItem based on a source assignment XML element during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.Xml.Linq.XDocument)">Load</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemLoading">
-            <summary>
-            Occurs when a PredecessorItem object is instantiated based on a source predecessor link XML element and is about to be added to a GanttChartItem object during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.Xml.Linq.XDocument)">Load</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignableResourceInfoLoading">
-            <summary>
-            Occurs when assignable resource information is retreived based on a source assignment XML element during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Load(System.Xml.Linq.XDocument)">Load</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ProjectInfoSaving">
-            <summary>
-            Occurs when a project XML element is generated based on source data during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemSaving">
-            <summary>
-            Occurs when a task XML element is generated based on a source GanttChartItem object during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemSaving">
-            <summary>
-            Occurs when a predecessor link XML element is generated based on source GanttChartItem and PredecessorItem objects during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ResourceInfoSaving">
-            <summary>
-            Occurs when a resource XML element is generated based on a source resource object during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoSaving">
-            <summary>
-            Occurs when an assignment XML element is generated based on source GanttChartItem, resource, and allocation units objects during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ProjectXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating the project XML element during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ScheduleWeekDayXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating week day XML elements (within calendar definition) during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ScheduleDayWorkingTimesXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating the day working times XML element (within calendar definition) during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.TaskXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating task XML elements during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating predecessor link XML elements during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ResourceXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating resource XML elements during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentXmlTemplate">
-            <summary>
-            Specifies the default XML template to use for generating assignment XML elements during <see cref="M:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.Save(System.IO.Stream)">Save</see> method execution.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ElementLoadingEventArgs">
-            <summary>
-            Represents base event arguments for element loading events.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ElementLoadingEventArgs.SourceElement">
-            <summary>
-            Indicates the source XML element used as input data within the Load operation.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemLoadingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemLoading">GanttChartItemLoading</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemLoadingEventArgs.GanttChartItem">
-            <summary>
-            Indicates the destination GanttChartItem object.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoLoadingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoLoading">AssignmentInfoLoading</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoLoadingEventArgs.Resource">
-            <summary>
-            Indicates the assigned resource name.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoLoadingEventArgs.AllocationUnits">
-            <summary>
-            Indicates the assigned allocation units.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemLoadingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemLoading">PredecessorItemLoading</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemLoadingEventArgs.PredecessorItem">
-            <summary>
-            Indicates the destination PredecessorItem object.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignableResourceInfoLoadingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignableResourceInfoLoading">AssignableResourceInfoLoading</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignableResourceInfoLoadingEventArgs.Resource">
-            <summary>
-            Indicates the assignable resource name.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ElementSavingEventArgs">
-            <summary>
-            Represents base event arguments for element saving events.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ElementSavingEventArgs.OutputXml">
-            <summary>
-            Gets or sets the XML content that will be used as output data within the Save operation.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemSavingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemSaving">GanttChartItemSaving</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.GanttChartItemSavingEventArgs.GanttChartItem">
-            <summary>
-            Indicates the source GanttChartItem object.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemSavingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemSaving">PredecessorItemSaving</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.PredecessorItemSavingEventArgs.PredecessorItem">
-            <summary>
-            Indicates the source PredecessorItem object.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ResourceInfoSavingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ResourceInfoSaving">ResourceInfoSaving</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.ResourceInfoSavingEventArgs.Resource">
-            <summary>
-            Indicates the resource name.
-            </summary>
-        </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoSavingEventArgs">
-            <summary>
-            Represents event arguments for <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoSaving">AssignmentInfoSaving</see> event.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoSavingEventArgs.Resource">
-            <summary>
-            Indicates the assigned resource name.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.GanttChartView.ProjectXmlSerializer.AssignmentInfoSavingEventArgs.AllocationUnits">
-            <summary>
-            Indicates the assigned allocation units.
             </summary>
         </member>
         <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.#ctor">
@@ -1916,64 +1251,10 @@
             </summary>
             <param name="item">The item to scroll to.</param>
         </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.MoveItem(DlhSoft.Web.UI.WebControls.ScheduleChartItem,System.Int32)">
-            <summary>
-            Moves the specified item to a new index in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.MoveItemUp(DlhSoft.Web.UI.WebControls.ScheduleChartItem)">
-            <summary>
-            Moves the specified item up in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.CanMoveItemUp(DlhSoft.Web.UI.WebControls.ScheduleChartItem)">
-            <summary>
-            Returns a value that indicates whether the specified item may be moved up in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.MoveItemDown(DlhSoft.Web.UI.WebControls.ScheduleChartItem)">
-            <summary>
-            Moves the specified item down in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.CanMoveItemDown(DlhSoft.Web.UI.WebControls.ScheduleChartItem)">
-            <summary>
-            Returns a value that indicates whether the specified item may be moved down in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.DefaultItemComparison(DlhSoft.Web.UI.WebControls.ScheduleChartItem,DlhSoft.Web.UI.WebControls.ScheduleChartItem)">
-            <summary>
-            Default item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.ScheduleChartItem},System.Boolean)">sorting</see> items based on their content.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.AssignmentCountItemComparison(DlhSoft.Web.UI.WebControls.ScheduleChartItem,DlhSoft.Web.UI.WebControls.ScheduleChartItem)">
-            <summary>
-            Item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.ScheduleChartItem},System.Boolean)">sorting</see> items based on their <see cref="P:DlhSoft.Web.UI.WebControls.ScheduleChartItem.GanttChartItems"/> collection count.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.ScheduleChartItem},System.Boolean)">
-            <summary>
-            Sorts all resource items in the collection based on the optionally specified parameters.
-            </summary>
-        </member>
         <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)">
             <summary>
             Processes postback data for the current control instance.
             </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.GetAssignments(System.String)">
-            <summary>
-            Iterates the list of standard task assignments (defined as task items and associated allocation units) for a specific resource within the control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as a list of resource names separated by commas, optionally having associated allocation percents declared between square brackets (e.g.: "John, Mary [50%], Diane [12.5%]").
-            </summary>
-            <param name="resourceName">The resource name to get the assignments of.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ScheduleChartView.GetLoadChartItems(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Gets a collection of <see cref="T:DlhSoft.Web.UI.WebControls.LoadChartItem">LoadChartItem</see> objects that may be used as an item collection within an associated <see cref="T:DlhSoft.Web.UI.WebControls.LoadChartView">LoadChartView</see> control.
-            Requires that AssignmentsContent property of the task items is of type string, formatted as an optional allocation percent (e.g.: "12.5%").
-            </summary>
-            <param name="resources">The optional set of resources to generate the Load Chart items for.</param>
         </member>
         <member name="P:DlhSoft.Web.UI.WebControls.ScheduleChartView.GridWidth">
             <summary>
@@ -2425,28 +1706,6 @@
             When set to a non-zero value, it is passed to the client side as the read only item.globalKey field accessible from the client code.
             </summary>
         </member>
-        <member name="T:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs">
-            <summary>
-            Provides data for the <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ItemPropertyChanged"/> event.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs.#ctor(DlhSoft.Web.UI.WebControls.GanttChartItem,System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs"/> class.
-            </summary>
-            <param name="item">The specific item that has changed.</param>
-            <param name="propertyName">The name of the item property for which the value has changed.</param>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs.Item">
-            <summary>
-            Gets the specific item that has changed.
-            </summary>
-        </member>
-        <member name="P:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs.PropertyName">
-            <summary>
-            Gets the name of the item property for which the value has changed.
-            </summary>
-        </member>
         <member name="T:DlhSoft.Web.UI.WebControls.LoadChartView">
             <summary>
             Displays allocation data in a customizable Load Chart control based on <see cref="T:DlhSoft.Web.UI.WebControls.ScheduleChartView"/> with an optional simple data grid attached.
@@ -2492,41 +1751,6 @@
             Scrolls the view vertically to present a specific item in the chart at the top of the viewport (or as up as possible in the viewport in case that the bottom of the chart is reached).
             </summary>
             <param name="item">The item to scroll to.</param>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.MoveItem(DlhSoft.Web.UI.WebControls.LoadChartItem,System.Int32)">
-            <summary>
-            Moves the specified item to a new index in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.MoveItemUp(DlhSoft.Web.UI.WebControls.LoadChartItem)">
-            <summary>
-            Moves the specified item up in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.CanMoveItemUp(DlhSoft.Web.UI.WebControls.LoadChartItem)">
-            <summary>
-            Returns a value that indicates whether the specified item may be moved up in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.MoveItemDown(DlhSoft.Web.UI.WebControls.LoadChartItem)">
-            <summary>
-            Moves the specified item down in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.CanMoveItemDown(DlhSoft.Web.UI.WebControls.LoadChartItem)">
-            <summary>
-            Returns a value that indicates whether the specified item may be moved down in the collection.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.DefaultItemComparison(DlhSoft.Web.UI.WebControls.LoadChartItem,DlhSoft.Web.UI.WebControls.LoadChartItem)">
-            <summary>
-            Default item comparison for <see cref="M:DlhSoft.Web.UI.WebControls.LoadChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.LoadChartItem},System.Boolean)">sorting</see> items based on their content.
-            </summary>
-        </member>
-        <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.Sort(System.Comparison{DlhSoft.Web.UI.WebControls.LoadChartItem},System.Boolean)">
-            <summary>
-            Sorts all resource items in the collection based on the optionally specified parameters.
-            </summary>
         </member>
         <member name="M:DlhSoft.Web.UI.WebControls.LoadChartView.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)">
             <summary>
@@ -2606,6 +1830,28 @@
         <member name="P:DlhSoft.Web.UI.WebControls.LoadChartView.SelectedIndex">
             <summary>
             Gets or sets the index of the first selected item in the <see cref="P:DlhSoft.Web.UI.WebControls.LoadChartView.Items"/> collection, or -1 if selection is empty.
+            </summary>
+        </member>
+        <member name="T:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:DlhSoft.Web.UI.WebControls.GanttChartView.ItemPropertyChanged"/> event.
+            </summary>
+        </member>
+        <member name="M:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs.#ctor(DlhSoft.Web.UI.WebControls.GanttChartItem,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs"/> class.
+            </summary>
+            <param name="item">The specific item that has changed.</param>
+            <param name="propertyName">The name of the item property for which the value has changed.</param>
+        </member>
+        <member name="P:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs.Item">
+            <summary>
+            Gets the specific item that has changed.
+            </summary>
+        </member>
+        <member name="P:DlhSoft.Web.UI.WebControls.ItemPropertyChangedEventArgs.PropertyName">
+            <summary>
+            Gets the name of the item property for which the value has changed.
             </summary>
         </member>
         <member name="T:DlhSoft.Windows.Data.TimeOfDay">
