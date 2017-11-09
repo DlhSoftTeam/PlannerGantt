@@ -5,7 +5,7 @@
     <script src="/Scripts/themes.js"></script>
     <div class="row">
         <div class="col-md-12" style="padding-top: 20px">
-            <pdgcc:GanttChartView ID="GanttChartView" runat="server" IsReadOnly="True"/>
+            <pdgcc:GanttChartView ID="GanttChartView" runat="server" IsReadOnly="True" IsMouseWheelZoomEnabledMinHourWidth="5"/>
         </div>
     </div>
 </asp:Content>
