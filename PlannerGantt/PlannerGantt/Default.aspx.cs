@@ -28,7 +28,7 @@ namespace PlannerGantt
             var knownUserNames = new Dictionary<string, string>();
             using (var client = new HttpClient())
             {
-                using (var plansRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/beta/me/plans"))
+                using (var plansRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/v1.0/me/planner/plans"))
                 {
                     plansRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     plansRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
@@ -39,7 +39,7 @@ namespace PlannerGantt
                         var bucketNames = new Dictionary<string, string>();
                         foreach (var plan in plans)
                         {
-                            using (var bucketsRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/beta/plans/" + plan["id"].Value<string>() + "/buckets"))
+                            using (var bucketsRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/v1.0/planner/plans/" + plan["id"].Value<string>() + "/buckets"))
                             {
                                 bucketsRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                                 bucketsRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
@@ -51,7 +51,7 @@ namespace PlannerGantt
                                         bucketNames.Add(bucket["id"].Value<string>(), bucket["name"].Value<string>());
                                 }
                             }
-                            using (var tasksRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/beta/plans/" + plan["id"].Value<string>() + "/tasks"))
+                            using (var tasksRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/v1.0/planner/plans/" + plan["id"].Value<string>() + "/tasks"))
                             {
                                 tasksRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                                 tasksRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
@@ -78,13 +78,13 @@ namespace PlannerGantt
                                             if (finish < start)
                                                 start = finish.AddDays(-1);
                                             var isCompleted = task["completedDateTime"].Value<DateTime?>() != null;
-                                            var assignedToId = task["assignedTo"].Value<string>();
+                                            var assignedToId = (task["assignments"].First as JProperty)?.Name;
                                             string assignedTo;
                                             if (assignedToId != null)
                                             {
                                                 if (!knownUserNames.TryGetValue(assignedToId, out assignedTo))
                                                 {
-                                                    using (var userRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/beta/users/" + assignedToId))
+                                                    using (var userRequest = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/v1.0/users/" + assignedToId))
                                                     {
                                                         userRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                                                         userRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
