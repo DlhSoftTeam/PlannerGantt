@@ -1,10 +1,9 @@
-# Planner Gantt (beta)
+# Planner Gantt
 Simple Web app that displays Office 365 plans using GanttChartView component from [DlhSoft Gantt Chart Web Library](http://DlhSoft.com/GanttChartWebLibrary). 
 
 ## Overview
 The application uses GanttChartView component from DlhSoft Gantt Chart Web Library to display plans and tasks from Microsoft Office 365 Planner.
-It leverages Microsoft Graph Beta API, so it should be used only for testing purposes, and not for production.
-Note that at this time it requires administrative account rights for the Office 365 tenant in order to run.
+It leverages Microsoft Graph API and might require administrative account rights for the Office 365 tenant in order to run.
 
 ## Running the code
 To be able run the code you will need to:
@@ -16,3 +15,6 @@ To be able run the code you will need to:
   * {ClientId} (GUID)
   * {ClientSecret} (Base64 encoded string)
   * {InstrumentationKey} (GUID)
+
+## Support
+This product is provided for free and "as is", so it doesn't include any official support.
